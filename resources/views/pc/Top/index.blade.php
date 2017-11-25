@@ -7,6 +7,9 @@
     <title>TOP</title>
 </head>
 <body>
-    <p>Hello World!</p>
+    <p>{{ $name }}のリストです</p>
+    @foreach ($list as $item)
+        <p>{{ $item }}</p>
+    @endforeach
 </body>
 </html>
